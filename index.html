@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Day Scheduler</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--Font Awesome CDN Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Moment.js CDN Stylesheet-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"
+        integrity="sha512-Dz4zO7p6MrF+VcOD6PUbA08hK1rv0hDv/wGuxSUjImaUYxRyK2gLC6eQWVqyDN9IM1X/kUA8zkykJS/gEVOd3w=="
+        crossorigin="anonymous"></script>
+
+    <!-- CSS file and reset-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">Work Day Scheduler</h1>
+        <h3 class="text-center">A simple calender app for scheduling your work day</h3>
+        <h3 class="text-center date">date</h3>
+    </div>
+
+    <div class="planner-container">
+        <div class="planner">
+            <div class="row 9am">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">9:00am</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 10am">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">10:00am</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 11am">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">11:00am</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 12am">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">12:00am</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 1pm">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">1:00pm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 2pm">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">2:00pm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 3pm">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">3:00pm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 4pm">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">4:00pm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row 5pm">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 no-margin">
+                    <div class="card text-center ml-0">
+                        <div class="card-body">
+                            <h5 class="card-title">5:00pm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-margin">
+                    <div class="card ml-0">
+                        <div class="card-body">
+                            <p class="card-text todo"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 no-margin">
+                    <div class="save-button">
+                        <a href="#" class="btn btn-primary btn-xlarge">
+                            <i class="fa fa-save"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="bottom-row"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.card {
+    min-height: 100px;
+}
+
+.ml-0{
+    margin-left: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-xlarge {
+    padding: 28px 33px;
+    margin: 0px;
+    font-size: 35px;
+    line-height: normal;
+    border-radius: 8px;  
+}
+.no-margin {
+    margin: 0px;
+    padding: 0px;
+}
