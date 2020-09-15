@@ -28,7 +28,7 @@
     <div class="jumbotron">
         <h1 class="text-center">Work Day Scheduler</h1>
         <h3 class="text-center">A simple calender app for scheduling your work day</h3>
-        <h3 class="text-center date">date</h3>
+        <h3 id = "todays-date" class="text-center"></h3>
     </div>
 
     <div class="planner-container">
@@ -43,11 +43,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card text-center ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry9am">9am meeting</textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -68,11 +64,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry10am"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -93,11 +85,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry11am"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -118,11 +106,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry12pm"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -143,11 +127,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry1pm"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -168,11 +148,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry2pm"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -193,11 +169,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry3pm"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -218,11 +190,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry4pm"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -243,11 +211,7 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <div class="card ml-0">
-                        <div class="card-body">
-                            <p class="card-text todo"></p>
-                        </div>
-                    </div>
+                    <textarea id="entry5pm"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
                     <div class="save-button">
@@ -261,6 +225,10 @@
             <div class="bottom-row"></div>
         </div>
     </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+        integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
