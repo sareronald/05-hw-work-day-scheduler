@@ -28,12 +28,12 @@
     <div class="jumbotron">
         <h1 class="text-center">Work Day Scheduler</h1>
         <h3 class="text-center">A simple calender app for scheduling your work day</h3>
-        <h3 id = "todays-date" class="text-center"></h3>
+        <h3 id="todays-date" class="text-center"></h3>
     </div>
 
     <div class="planner-container">
         <div class="planner">
-            <div class="row 9am">
+            <div class="row 9am" id="row9">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -43,18 +43,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry9am" placeholder="Add your TO DOs here..."></textarea>
+                    <textarea id="entry9" class="entry" placeholder="Add your TO DOs here..."></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="9">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 10am">
+            <div class="row 10am" id="row10">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -64,18 +64,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry10am"></textarea>
+                    <textarea id="entry10" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="10">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 11am">
+            <div class="row 11am" id="row11">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -85,18 +85,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry11am"></textarea>
+                    <textarea id="entry11" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="11">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 12am">
+            <div class="row 12am" id="row12">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -106,18 +106,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry12pm"></textarea>
+                    <textarea id="entry12" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="12">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 1pm">
+            <div class="row 1pm" id="row13">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -127,18 +127,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry1pm"></textarea>
+                    <textarea id="entry1" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="13">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 2pm">
+            <div class="row 2pm" id="row14">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -148,18 +148,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry2pm"></textarea>
+                    <textarea id="entry2" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="14">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 3pm">
+            <div class="row 3pm" id="row15">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -169,18 +169,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry3pm"></textarea>
+                    <textarea id="entry3" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="15">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 4pm">
+            <div class="row 4pm" id="row16">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -190,18 +190,18 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry4pm"></textarea>
+                    <textarea id="entry4" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="16">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-            <div class="row 5pm">
+            <div class="row 5pm" id="row17">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2 no-margin">
                     <div class="card text-center ml-0">
@@ -211,11 +211,11 @@
                     </div>
                 </div>
                 <div class="col-sm-7 no-margin">
-                    <textarea id="entry5pm"></textarea>
+                    <textarea id="entry5" class="entry"></textarea>
                 </div>
                 <div class="col-sm-2 no-margin">
-                    <div class="save-button">
-                        <a href="#" class="btn btn-primary btn-xlarge">
+                    <div class="save-button" data-time="17">
+                        <a href="#" class="btn btn-primary btn-xlarge data">
                             <i class="fa fa-save"></i>
                         </a>
                     </div>
@@ -229,6 +229,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
         integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 
 </html>
