@@ -8,7 +8,7 @@ This Work Day Scheduler is composed of 4 pages: index.html, script.js and style.
 
 ## User Story
 <p>
-The purpose of this project was to create a simple calender application that allows the user to save events for each hour of the day and manage their time effectively. This app will run in the browser and feature dynamically updated HTML and CSS powered by JQuery. The [Moment.js](https://momentjs.com/) library will be used to work with date and time. 
+The purpose of this project was to create a simple calender application that allows the user to save events for each hour of the day and manage their time effectively. This app will run in the browser and feature dynamically updated HTML and CSS powered by JQuery. The [Moment.js] library (https://momentjs.com/) will be used to work with date and time. 
 </p> 
 
 ## Acceptance Criteria
@@ -37,18 +37,15 @@ THEN the saved events persist
 * [Font Awesome](https://getbootstrap.com/docs/4.5/components/alerts/)
 
 #### Initial Interface
+![Work-Day-Scheduler-screenshot](https://user-images.githubusercontent.com/67722377/93660071-bcea6780-fa8e-11ea-9ee3-c6ea41e69de8.png)
 ![GitHub Logo](05.png)
-Format: ![![start-index](<img >)](url)
-![Work-Day-Scheduler](https://user-images.githubusercontent.com/67722377/93340746-99e26c80-f870-11ea-8e0a-1aa64b5199e1.png)
-
-![GitHub Logo](05.png)
-Format: ![![question1](<img >)](url)
+Format: [![screenshot](<img >)](url)
 
 ####Licence
 Not applicable for this task
 
 ### Link to the App
-<a href="file:///Users/sarahronald/usyd-syd-activities/00coding-bootcamp-homework/05-hw-work-day-scheduler/index.html#">Link to the App</a><hr>
+<a href="file:///Users/sarahronald/usyd-syd-activities/00coding-bootcamp-homework/05-hw-work-day-scheduler/index.html#">Link to the App: "file:///Users/sarahronald/usyd-syd-activities/00coding-bootcamp-homework/05-hw-work-day-scheduler/index.html#"</a><hr>
 
 ## Authors
 * **SARAH RONALD** - 

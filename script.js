@@ -16,71 +16,29 @@ $(document).ready(function () {
 
             if (row < h)
                 currentRow.addClass("past");
-            else if (row < h)
+            else if (row > h)
                 currentRow.addClass("future");
             else if (row === h)
                 currentRow.addClass("present");
         }
-
+        // update the page, time & row colour every second
         setTimeout(refresh, 1000);
         console.log("setTimeout");
     }
-    refresh();
-
-    // refer back to calculator - amount per person - Unit 4 Activity 13
-    // allow the user to add comments into their day planner textarea  
-    // var element9 = document.querySelector("#entry9");
-    // var element10 = document.querySelector("#entry10");
-    // var entryEl = document.querySelector(".entry");
-    // var saveBtn = document.querySelector(".save-button");
-
-    // var thingsToDo = [];
-
-    // // getting the value for 9am
-    // // function toDoList(event) {
-    //     event.preventDefault();
-    //     localStorage.setItem('entry9', element9.value);
-    //     var nineToDo = element9.value;
-    //     thingsToDo.push({ nineToDo: nineToDo });
-    // localStorage.setItem('entry10', tenEl.value);
-    // var tenToDo = tenEl.value;
-    // var elevenToDo = eleven.value;
-    // thingsToDo.push({elevenToDo: elevenToDo });
-    // thingsToDo.push({twelveToDo: twelveToDo });
+refresh();
 })
-// give give each corresponding button a data-time, then make an event listener like this?
+// allow the user to add comments into their day planner textarea 
+// give give each corresponding button a data-time, then make an event listener
+for (let i = 9; i !== 6; i++) {
+    console.log(i);
+    if (i >= 12) {
+        i = 0;
+        continue;
+    }
+}
 document.querySelector(".save-button").addEventListener("click", function (event) {
     event.preventDefault();
     let time = parseInt($(this).data("time"));
-    let entry = $(`.entry${time}`.val());
-    localStorage.setItem(`entry${i}`, entry)
+    let entry = $(`.entry${time}`).val();
+    localStorage.setItem(`entry${i}`, entry);
 })
-
-
-
-    // // click on the save button and save todo onto the list in local storage
-    // saveBtn.addEventListener("click", toDoList);
-    // element9.innerHTML = localStorage.getItem('entry9')
-
-    // rows change colour as the time continues
-    // if HH = HH make it this colour blue and text white
-    // var hour = moment(HH) 
-    // hr = (new Date()).getHours();
-
-    // changing row colours according to past, present, future
-    //?is that the right ID?
-
-
-
-
-    // var hour = 10;
-    // if (hour < 10) {
-    //     document.getElementById("entry10").className = "past";
-    // }
-    // // else in the future light grey
-    // else if (hour > 10) {
-    //     document.getElementById("entry11").className = "future";
-    // }
-    // // else if it time is less than current time = white 
-    // else (hour === 10)
-    // document.getElementById("entry10").className = "present";
